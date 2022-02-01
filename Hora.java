@@ -12,6 +12,31 @@ public class Hora
    private int minutos;
    private int segundos;
    
+   //  Zona de consttructores
+   public Hora(int h, int m, int s) {
+       setHoras(h);
+       setMinutos(m);
+       setSegundos(s);
+   }
+   
+   public Hora(int h, int m) {
+       setHoras(h);
+       setMinutos(m);
+       setSegundos(0);
+   }
+   
+   public Hora(int h) {
+       setHoras(h);
+       setMinutos(0);
+       setSegundos(0);
+   }
+   
+   public Hora() {
+       setHoras(0);
+       setMinutos(0);
+       setSegundos(0);
+   }
+   
    // Zona de las operaciones
    // Modificadores  (setters)
    public void setHoras(int h) {
