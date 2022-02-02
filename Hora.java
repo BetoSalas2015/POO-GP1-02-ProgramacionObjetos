@@ -64,6 +64,21 @@ public class Hora
        return segundos;
    }
    
+   
+   public String toString() {
+       return ((horas == 0 || horas == 12) ? 12 : horas % 12) + ":" +
+               (minutos < 10 ? "0" : "") + minutos + ":" +
+               (segundos < 10 ? "0" : "") + segundos + 
+               (horas <12 ? " AM" : " PM");
+   }
+   
+   public
+   String toMilitaryString() {
+       return (horas < 10 ? "0" : "") + horas + (minutos < 10 ? "0" : "") 
+               + minutos + " hrs.";
+   }
+   
+   
 }
 
 
